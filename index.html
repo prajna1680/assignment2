@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Erste::Home</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+	
+	<div class="container" id="main">
+
+	<div class="navbar navbar-fixed-top">
+		<div class="container">
+
+		<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">	 
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<a class="navbar-brand" href="#"><img src="images/elogo.png" alt="logo"></a>
+		<div class="nav-collapse collapse navbar-responsive-collapse">
+
+			<ul class="nav navbar-nav">
+				<li ><a href="#">HOME</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Home and finance</a></li>
+						<li><a href="#">Accounts</a></li>
+						<li><a href="#">Savings And Investment</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Extra Services</li>
+						<li><a href="#">Insurances</a></li>
+						<li><a href="#">Loans</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+
+			<form class="navbar-form pull-left">
+				<input type="text" class="form-control" id="searchInput" placeholder="Search">
+				<button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+			</form>
+
+			<ul class="nav navbar-nav pull-right">
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Account <strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-off"></span> SignOut</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	</div>
+
+	<div class="carousel slide" id="myCarousel">
+
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+			<li data-slide-to="1" data-target="#myCarousel"></li>
+			<li data-slide-to="2" data-target="#myCarousel"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="item active" id="slide1">
+				<img class="img-responsive" src="images/slider1.jpg" alt="slider1">
+			</div>
+
+			<div class="item" id="slide2">
+				<img class="img-responsive" src="images/slide.png" alt="slider2">
+			</div>
+
+			<div class="item" id="slide3">
+				<img class="img-responsive" src="images/slider3.jpg" alt="slider3">
+			</div>
+		</div>
+
+		<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+		<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+	</div>
+
+	<div class="row" id="bigCallout">
+	<div class="col-12">
+		
+		<div class="well well-small visible-sm">
+			<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Call Us</a>
+		</div>
+		
+		<div class="well">
+			<div class="page-header">
+				<h1>Welcome to the ERSTE <small>Group </small></h1>
+				<p class="lead">Erste Group Bank AG (Erste Group) is one of the largest financial services providers in Central and Eastern Europe serving 15.7 million clients in over 2,700 branches in 7 countries.</p>
+				<input type="text" id="number" placeholder="Enter contact to get in touch!">
+				<a href="" class="btn btn-small btn-primary" id="alertMe">Submit</a>
+			</div>
+		</div>
+		
+		<div class="alert alert-success alert-block fade in" id="successAlert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<h4>Thanks for choosing us. We'll get back to you soon.</h4>
+		</div>
+	</div>
+	</div>
+
+	<div class="row" id="features">
+		<div class="col-sm-4 feature">
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title">Digital Banking</h3>
+				</div>
+				<img src="images/alt12.jpg" alt="first" width="200px" height="200px">
+				<p>Are you mobile? Our services are, too. With George, the most modern online banking, 	you can take care of your banking business wherever you happen to be at the moment: from home, at the office, or when on the go. Whether laptop, tablet, or smartphone – with George and our innovative apps, the way you experience your money will be more personal than ever.</p>
+				<a href="http://www.google.in" target="_blank" class="btn btn-warning btn-block">Know more</a>
+			</div>
+		</div>
+		
+		<div class="col-sm-4 feature">
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title">Savings and Investment</h3>
+				</div>
+				<img src="images/alt2.png" alt="first" width="200px" height="200px">
+				<p>Whether you’d like to put money aside on a regular basis or make a one-time investment of a specific amount, if you save and invest, you’ll have greater financial latitude in the future. We can offer you a variety of options for saving and investing.</p>
+				<a href="http://www.google.in" target="_blank" class="btn btn-danger btn-block">Know more</a>
+			</div>
+		</div>
+	
+		<div class="col-sm-4 feature">
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title">Home and Finance</h3>
+				</div>
+				<img src="images/pic3.png" alt="first" width="200px" height="200px">
+				<p>A bigger home, a new computer, a larger car. Sometimes your wishes go beyond your family’s budget. But with flexible financing, there’s much you can achieve – including protection against unplanned events. Build, buy, renovate? Are you looking to have a nicer home, but your savings aren’t quite enough? Don’t forego your dreams – we can provide you with customised financing.</p>
+				<a href="http://www.google.in" target="_blank" class="btn btn-warning btn-block">Know more</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" id="moreinfo">
+		<div class="col-sm-6">
+		<h3>News</h3>
+		<div class="tabbale">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#tab1" data-toggle="tab">Section1</a></li>
+				<li><a href="#tab2" data-toggle="tab">Section2</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab1">
+					<h4>Scant interest in apps by fintechs</h4>
+					<p>The new European Second Payment Services Directive (PSD2) places an obligation on banks to make customer data available to third parties such as fintechs when customers request this because they want to use special financial apps to manage their financial life. However, Austrians’ interest in such financial apps is rather low. Only 10% of Austrians consider such apps attractive. George, the most modern banking service in Austria, was designed already three years ago with a view to developments relating to PSD2 and combines all of the innovative elements required of modern and mobile banking in this era of digitisation. </p>
+				</div>
+				<div class="tab-pane" id="tab2">
+					<h4>Rising popularity of securities and real estate</h4>
+					<p>The propensity of Austrians to save money is steady. Currently, 84% are planning to invest money in the coming 12 months. Especially households with a net income of over EUR 2,000 are showing a higher inclination to set money aside; 9 out of 10 intend to invest money during this period (92%). The top three investment forms continue to be savings passbooks (62%), savings in building society schemes (50%) and life insurance (39%). While classical savings products stayed on a stable course, a growing number of Austrians are considering investments in real estate (19%/+5) and securities (28%/+4). “This development is very pleasing,” commented Schaufler on this trend. ”It is especially important in times of low interest rates to diversify assets broadly and to also add securities to one’s personal investment portfolio. This is the only way to build a financial nest egg over the long term.” Interest in equities is especially high: every seventh person is deliberating an investment in stocks; one year ago, it was only every ninth person.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="col-sm-6">
+			<h3>Subscribe to our newsletter</h3>
+			<form>
+				<div class="form-group">
+				    <label for="inputName">Name</label>
+				    <input type="email" class="form-control" id="inputName" placeholder="Name">
+				</div>
+				<div class="form-group">
+				    <label for="inputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="inputEmail1" placeholder="abc@xyz.com">
+			 	</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+
+</div>
+
+
+	<footer>
+		<div class="container">
+		<h5><a href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a></h5>
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>About</h4>
+						<ul class="unstyled">
+						<li><a href="#">Branches</a></li>
+						<li><a href="#">Markets</a></li>
+						<li><a href="#">Team</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Navigation</h4>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Account</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>	
+					</ul>			
+				</div>
+				<div class="col-sm-4">
+					<h4>Follow Us</h4>
+					<ul class="unstyled">
+						<li><a href="http://www.facebook.com">Facebook</a></li>
+						<li><a href="http://www.twitter.com">Twitter</a></li>
+						<li><a href="http://www.linkedin.com">LinkedIn</a></li>
+				</div>
+			</div>
+			<h5>Copyright &copy; 2018</h5>
+		</div>
+	</footer>
+
+	
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
